@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mover IP</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <p><a href="../index.html">Inicio</a></p>
+    <header>        
+        <h1>Mover IP Público</h1>
+    </header>
+    <section>        
+        <form action="swap.php" method="get" autocomplete="off">
+            <label for="nomeambiente">Nome do ambiente </label>
+            <input type="text" name="nomeambiente" id="nomeamb">
+            <label for="idnodefonte">ID node do ambiente que possui o IP </label>
+            <input type="text" name="idnodefonte" id="idnode">
+            <label for="idnodedestino">ID node do ambiente destino do IP </label>
+            <input type="text" name="idnodedestino" id="idnodedest">
+            <label for="ipmigrado">IP a ser migrado </label>
+            <input type="text" name="ipmigrado" id="ipmig">
+            <label for="token">Token </label>
+            <input type="text" name="token" id="tokenid">
+            <p>Realizar a troca entre 2 ambientes</p>
+            <input type="submit" value="Swapextips">
+            <p>Sobrepor o IP no destino (Cuidado) </p>
+            <input type="submit" formaction="move.php" value="Moveextips">
+            
+        </form>
+        
+    </section>
+</body>
+</html>
