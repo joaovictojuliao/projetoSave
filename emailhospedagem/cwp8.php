@@ -19,6 +19,7 @@
             $dominio = $_POST["dominio"]; 
             $usuario = $_POST["usuario"];
             $senha = $_POST["senha"];
+            $plano = $_POST["plano"]; 
             $end1 = "http://server8.pureteserver.com:2082";
             $end2 = "https://server8.pureteserver.com:2083";
             $dns1 = "ns.server8.pureteserver.com";
@@ -39,7 +40,7 @@
 
 <p>Bom dia <span class="highlight"><?php echo $nome; ?></span>,</p>
 
-<p>Segue abaixo as informações de acesso.</p>
+<p>Segue abaixo as informações de acesso do seu plano: <span class="highlight"><?php echo $plano; ?></span> </p>
 
 <p>Endereço IP: <span class="highlight"><?php echo $ip1; ?></span></p>
 
