@@ -12,8 +12,8 @@
     </header>
     <main>
         <?php 
-            $n = $_POST["app"];
-            $s = $_POST["session"];
+            $n = $_GET["app"];
+            $s = $_GET["session"];
             $link = "https://app.jelastic.saveincloud.net/JElastic/administration/cluster/rest/setenvstatus?appid=cluster&targetAppid=$n&status=2&session=$s";            
         ?>
         <a href="<?php echo $link; ?>" target="_blank">
