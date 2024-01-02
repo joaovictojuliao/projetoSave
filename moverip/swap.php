@@ -13,11 +13,11 @@
     </header>
     <main>
         <?php 
-            $n = $_GET["nomeambiente"];
-            $inf = $_GET["idnodefonte"];
-            $ind = $_GET["idnodedestino"];
-            $ipm = $_GET["ipmigrado"];
-            $token = $_GET["token"];
+            $n = $_POST["nomeambiente"];
+            $inf = $_POST["idnodefonte"];
+            $ind = $_POST["idnodedestino"];
+            $ipm = $_POST["ipmigrado"];
+            $token = $_POST["token"];
             $link = "https://app.jelastic.saveincloud.net/1.0/environment/binder/rest/swapextips?envName=$n&session=$token&sourceNodeId=$inf&targetNodeId=$ind&ips=$ipm";
         ?>
         <a href="<?php echo $link; ?>" target="_blank">

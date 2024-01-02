@@ -13,12 +13,12 @@
     </header>
     <main>
         <?php 
-            $nome = $_GET["nomecliente"]; 
+            $nome = $_POST["nomecliente"]; 
             $ip1 = "200.150.202.195";
             $ip2 = "200.150.202.2";
-            $dominio = $_GET["dominio"]; 
-            $usuario = $_GET["usuario"];
-            $senha = $_GET["senha"];
+            $dominio = $_POST["dominio"]; 
+            $usuario = $_POST["usuario"];
+            $senha = $_POST["senha"];
             $end1 = "http://server3.pureteserver.com:2082";
             $end2 = "https://server3.pureteserver.com:2083";
             $dns1 = "ns.server3.pureteserver.com";
