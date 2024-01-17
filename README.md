@@ -7,13 +7,13 @@ Facilitando a gestão de instâncias, comunicação via e-mail e a atualização
 
 ## Funcionalidades
 
-### Troca de IP entre Instâncias
-
-Permite uma troca fácil e rápida de endereços IP entre instâncias do seu ambiente de trabalho. Isso pode ser útil em cenários de desenvolvimento e testes.
-
 ### Atualizar status API
 
 Atualiza o status do APP SaveInCloud, em caso esteja "bugado" no front-end da plataforma. 
+
+### Troca de IP entre Instâncias
+
+Permite uma troca fácil e rápida de endereços IP entre instâncias do seu ambiente de trabalho. Isso pode ser útil em cenários de desenvolvimento e testes.
 
 ### Mensagem de e-mail ( hospedagem )
 
