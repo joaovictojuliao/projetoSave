@@ -11,9 +11,8 @@
     <header>        
         <h1>Mensagem e-mail hospedagem</h1>
     </header>
-    <section>        
+	<section>
         <form action="cwp1.php" method="post" autocomplete="off">
-
             <label for="nomecliente">Nome do Cliente </label>
             <input type="text" name="nomecliente" id="nomeid" maxlength="50">
 
@@ -37,14 +36,37 @@
                 <option value="Revenda de hospedagem 3">REVENDA DE HOSPEDAGEM 3</option>
             </select>
 
-            <input type="submit" value="CWP 1">
-            <input type="submit" formaction="cwp2.php" value="CWP 2">
-            <input type="submit" formaction="cwp3.php" value="CWP 3">
-            <input type="submit" formaction="cwp4.php" value="CWP 4">
-            <input type="submit" formaction="cwp5.php" value="CWP 5">
-            <input type="submit" formaction="cwp7.php" value="CWP 7">
-            <input type="submit" formaction="cwp8.php" value="CWP 8">
-        </form>        
+            <label for="serverid">Servidores</label>
+            <select name="server" id="serverid">
+                <option value=""> </option>
+                <option value="cwp1.php">CWP 1</option>
+                <option value="cwp2.php">CWP 2</option>
+                <option value="cwp3.php">CWP 3</option>
+                <option value="cwp4.php">CWP 4</option>
+                <option value="cwp5.php">CWP 5</option>
+                <option value="cwp6.php">CWP 6</option>
+                <option value="cwp7.php">CWP 7</option>
+                <option value="cwp8.php">CWP 8</option>
+            </select>
+
+            <input type="submit" value="Ir para o servidor selecionado" onclick="redirecionar(event)">
+        </form>
+
+        <script>
+            function redirecionar(event) {
+                event.preventDefault(); // Evita o envio imediato do formulário
+
+                // Obtenha o valor selecionado
+                var server = document.getElementById("serverid").value;
+
+                if (server) {
+                    document.querySelector("form").action = server;
+                    document.querySelector("form").submit(); // Submete o formulário
+                } else {
+                    alert("Por favor, selecione uma opção válida.");
+                }
+            }
+        </script>
     </section>
 </body>
 </html>
