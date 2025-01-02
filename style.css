@@ -4,18 +4,21 @@ body {
     background: linear-gradient(135deg, #4F46E5, #3B82F6);
     color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Organização em coluna */
+    align-items: flex-start; /* Alinhamento dos itens à esquerda */
+    padding: 40px; /* Adiciona espaçamento interno */
     min-height: 100vh;
     margin: 0;
-    text-align: center;
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
 /* Título principal */
 header > h1 {
     font-size: 3rem;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: left; /* Alinha o título à esquerda */
+    margin-left: 20px; /* Adiciona margem à esquerda */
 }
 
 /* Container dos botões */
@@ -26,8 +29,9 @@ header > h1 {
     max-width: 400px;
     background: #fff;
     border-radius: 12px;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-left: 20px; /* Move o container um pouco para a esquerda */
 }
 
 /* Botões estilizados */
@@ -40,6 +44,7 @@ header > h1 {
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s ease;
+    text-align: left; /* Alinha o texto dos botões à esquerda */
 }
 
 .container button:hover {
@@ -51,4 +56,6 @@ footer {
     margin-top: 30px;
     font-size: 0.9rem;
     color: #fff;
+    margin-left: 20px; /* Alinha o rodapé com o restante */
+    text-align: left;
 }
