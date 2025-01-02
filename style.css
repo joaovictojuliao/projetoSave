@@ -56,3 +56,60 @@ footer {
     text-align: left;
     margin-top: auto; /* Empurra o rodapé para o final */
 }
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os campos */
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons input[type="submit"] {
+    background: #6C63FF;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.buttons input[type="submit"]:hover {
+    background: #4F46E5;
+}
+
+/* Link do topo */
+header p a {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+header p a:hover {
+    text-decoration: underline;
+}
