@@ -5,112 +5,63 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Espaça o conteúdo e o rodapé */
-    height: 100vh; /* Define altura exata da janela */
-    margin: 0; /* Remove margens padrão */
-    padding: 0 20px; /* Espaçamento interno nas laterais */
-    box-sizing: border-box; /* Inclui padding e border na altura total */
-    overflow: hidden; /* Remove possíveis barras de rolagem */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 /* Título principal */
-header > h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+header h1 {
+    font-size: 2.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-/* Container dos botões */
+/* Container principal */
 .container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+}
+
+/* Grupo de botões */
+.button-group {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 400px;
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Botões estilizados */
-.container button {
+/* Botões */
+.button-group button {
     background: #6C63FF;
     color: white;
-    font-size: 1.2rem;
-    padding: 12px 20px;
+    font-size: 1.1rem;
+    padding: 12px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s ease;
-    text-align: left;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.container button:hover {
+.button-group button:hover {
     background: #4F46E5;
+    transform: scale(1.05);
 }
 
 /* Rodapé */
 footer {
     font-size: 0.9rem;
     color: #fff;
-    text-align: left;
-    margin-top: auto; /* Empurra o rodapé para o final */
+    text-align: center;
+    margin-top: 20px;
 }
-/* Formulário */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Espaçamento entre os campos */
-}
-
-form div {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    font-size: 1rem;
-    margin-bottom: 5px;
-}
-
-form input[type="text"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-}
-
-.buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.buttons input[type="submit"] {
-    background: #6C63FF;
-    color: white;
-    font-size: 1rem;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.buttons input[type="submit"]:hover {
-    background: #4F46E5;
-}
-
-/* Link do topo */
-header p a {
-    font-size: 0.9rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-}
-
-header p a:hover {
-    text-decoration: underline;
-}
-

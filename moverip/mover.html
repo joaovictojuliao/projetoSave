@@ -4,36 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mover IP</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../mover.css">
 </head>
 <body>
-    <p><a href="../index.html">Inicio</a></p>
+    <p><a href="../index.html" class="back-link">← Início</a></p>
+    
     <header>        
         <h1>Mover IP Público</h1>
     </header>
-    <section>        
+    
+    <section class="container">
         <form action="swap.php" method="post" autocomplete="off">
-
-            <label for="nomeambiente">Nome do ambiente </label>
-            <input type="text" name="nomeambiente" id="nomeamb" maxlength="50">
-
-            <label for="idnodefonte">ID node do ambiente que possui o IP </label>
-            <input type="number" name="idnodefonte" id="idnode" maxlength="6">
-
-            <label for="idnodedestino">ID node do ambiente destino do IP </label>
-            <input type="number" name="idnodedestino" id="idnodedest" maxlength="6">
-
-            <label for="ipmigrado">IP a ser migrado (C/ ponto) </label>
-            <input type="text" name="ipmigrado" id="ipmig" maxlength="16">
-
-            <label for="token">Token </label>
-            <input type="text" name="token" id="tokenid">
-
-            <p>Realizar a troca entre 2 ambientes </p>
-            <input type="submit" value="Swapextips">
             
-            <p>Sobrepor o IP no destino (Cuidado) </p>
-            <input type="submit" formaction="move.php" value="Moveextips">
+            <label for="nomeambiente">Nome do ambiente</label>
+            <input type="text" name="nomeambiente" id="nomeamb" maxlength="50" placeholder="Digite o nome do ambiente">
+            
+            <label for="idnodefonte">ID node do ambiente que possui o IP</label>
+            <input type="number" name="idnodefonte" id="idnode" maxlength="6" placeholder="Ex: 123456">
+            
+            <label for="idnodedestino">ID node do ambiente destino do IP</label>
+            <input type="number" name="idnodedestino" id="idnodedest" maxlength="6" placeholder="Ex: 654321">
+            
+            <label for="ipmigrado">IP a ser migrado (Com pontos)</label>
+            <input type="text" name="ipmigrado" id="ipmig" maxlength="16" placeholder="Ex: 192.168.1.1">
+            
+            <label for="token">Token</label>
+            <input type="text" name="token" id="tokenid" placeholder="Digite seu token">
+            
+            <div class="button-group">
+                <button type="submit" class="swap-button">Trocar entre ambientes</button>
+                <button type="submit" formaction="move.php" class="move-button">Sobrepor no destino ⚠</button>
+            </div>
             
         </form>    
     </section>
