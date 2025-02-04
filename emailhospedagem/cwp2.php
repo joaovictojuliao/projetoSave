@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensagem e-mail</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../e-mail.css">
 </head>
 <body>
 <p><a href="../index.html">Inicio</a></p>
