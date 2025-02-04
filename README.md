@@ -2,14 +2,14 @@
 
 # Facilitadores
 
-O projeto Facilitadores tem como objetivo simplificar e automatizar diversas tarefas do dia a dia.
+O projeto Facilitadores tem como objetivo simplificar e automatizar diversas tarefas do dia a dia de trabalho na SaveInCloud.
 Facilitando a gestão de instâncias, comunicação via e-mail e a atualização do status do aplicativo SaveInCloud.
 
 ## Funcionalidades
 
 ### Atualizar status API
 
-Atualiza o status do APP SaveInCloud, em caso esteja "bugado" no front-end da plataforma. 
+Atualiza o status do APP SaveInCloud, em caso esteja apresentando o status do ambiente como parando ou iniciando, no front-end da plataforma. 
 
 ### Troca de IP entre Instâncias
 
@@ -17,6 +17,6 @@ Permite uma troca fácil e rápida de endereços IP entre instâncias do seu amb
 
 ### Mensagem de e-mail ( hospedagem )
 
-Cria a partir dos dados fornecidos a mensagem de e-mail padrão que precisamos enviar aos clientes. 
+Cria a partir dos dados fornecidos a mensagem de e-mail padrão que precisamos enviar aos clientes na criação de hospedagem. 
 
 
